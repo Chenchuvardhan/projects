@@ -1,0 +1,8 @@
+package com.jagannadh;
+
+public class ContainsMethod {
+    static void containsNumber(int target,int... values)
+	public static void main(String[] args) {
+
+	}
+}

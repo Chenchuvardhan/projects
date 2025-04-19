@@ -1,0 +1,7 @@
+package com.mphasis;
+
+public class FindOutSecondMostRepeatedCharacterInAString {
+	public static void main(String[] args) {
+
+	}
+}

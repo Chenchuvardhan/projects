@@ -1,0 +1,75 @@
+package in.reliance.rest;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.reliance.entity.JioSim;
+import in.reliance.response.ApiResponse;
+import in.reliance.service.IJioSimService;
+
+@RestController
+public class JioRestController {
+	@Autowired
+	private IJioSimService jioService;
+	@Autowired
+	private PasswordEncoder pwdEncoder;
+	@Autowired
+	private AuthenticationManager authenticationManager;
+
+	@PostMapping(value = "/register", consumes = "application/json", produces = "application/json")
+	public ResponseEntity<ApiResponse<JioSim>> saveSimUser(@RequestBody JioSim jio) {
+		jio.setPwd(pwdEncoder.encode(jio.getPwd()));
+		JioSim saveSim = jioService.saveSim(jio);
+		ApiResponse<JioSim> apiResponse = new ApiResponse<>();
+		if (saveSim != null) {
+			apiResponse.setStatus(201);
+			apiResponse.setMessage("JioSim registred with " + saveSim.getId());
+			apiResponse.setData(saveSim);
+			return new ResponseEntity<ApiResponse<JioSim>>(apiResponse, HttpStatus.CREATED);
+		}
+		apiResponse.setStatus(500);
+		apiResponse.setMessage("Internal Server Problem");
+		apiResponse.setData(null);
+		return new ResponseEntity<ApiResponse<JioSim>>(apiResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
+	@PostMapping(value = "/login", consumes = "application/json", produces = "application/json")
+	public ResponseEntity<ApiResponse<JioSim>> doLogin(@RequestBody JioSim jio) {
+		UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
+				jio.getEmail(), jio.getPwd());
+		Authentication authenticate = authenticationManager.authenticate(authenticationToken);
+		ApiResponse<JioSim> response = new ApiResponse<>();
+		if (authenticate.isAuthenticated()) {
+		response.setStatus(200);
+		response.setMessage("Login successfull");
+		response.setData(null);
+		return  new ResponseEntity<>(response,HttpStatus.OK);
+		}
+		response.setStatus(400);
+		response.setMessage("Login Fail");
+		response.setData(null);
+		return new ResponseEntity<ApiResponse<JioSim>>(response,HttpStatus.BAD_REQUEST);
+	}
+
+	@GetMapping(value = "/all", produces = "application/json")
+	public ResponseEntity<ApiResponse<List<JioSim>>> getAllJioSims() {
+		List<JioSim> allSims = jioService.getAllSims();
+		ApiResponse<List<JioSim>> response = new ApiResponse<>();
+		response.setStatus(200);
+		response.setMessage("data fetched successfully");
+		response.setData(allSims);
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+}

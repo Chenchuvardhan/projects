@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: MicroServices-ConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ashokitschool/configuration_properties
+server:
+  port: 7070

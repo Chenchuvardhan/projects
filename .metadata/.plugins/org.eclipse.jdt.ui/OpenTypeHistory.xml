@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=TrickyQuestions/src&lt;com.mphasis{MyFunctionalInterface.java[MyFunctionalInterface" modifiers="513" timestamp="1741181457085"/>
+    <typeInfo handle="=PhoneBook/C:\/Users\/DELL\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.4.3\/spring-data-jpa-3.4.3.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.4.3=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1740206439325"/>
+    <typeInfo handle="=Autowiring-ByName/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.morgan.component{Engine.java[Engine" modifiers="513" timestamp="1742446797153"/>
+    <typeInfo handle="=CrudOperations/C:\/Users\/DELL\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.4.4\/spring-data-jpa-3.4.4.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.4.4=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1744365275589"/>
+    <typeInfo handle="=CrudOperations/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.morgan.repo{EmployeeRepo.java[EmployeeRepo" modifiers="513" timestamp="1744365685953"/>
+    <typeInfo handle="=CrudOperations/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.morgan.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1744366774123"/>
+</typeInfoHistroy>

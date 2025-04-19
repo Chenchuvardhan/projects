@@ -1,0 +1,22 @@
+package com.date.operations;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class PrintAllMondays {
+	public static void main(String[] args) {
+		try {
+			LocalDate today = LocalDate.now();
+			int month = today.getMonthValue();
+			while (today.getMonthValue() == month) {
+				today = today.plusDays(1);
+				if (today.getDayOfWeek() == DayOfWeek.MONDAY)
+			
+					System.out.println(today.format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

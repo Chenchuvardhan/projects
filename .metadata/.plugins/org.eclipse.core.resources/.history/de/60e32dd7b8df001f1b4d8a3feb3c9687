@@ -1,0 +1,11 @@
+package in.compass.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ContactController {
+@GetMapping(value="/info")
+public String getInfo() {
+	return "contact : +91 9898788771";
+}
+}

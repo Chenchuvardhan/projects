@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: CrudOperations
+  datasource:
+    url: jdbc:mysql:///security
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update 
+    show-sql: true
+server:
+  port: 5000

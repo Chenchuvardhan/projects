@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Accessing-SecuredRestControllerThroughSpringBoot
+server:
+  port: 9090

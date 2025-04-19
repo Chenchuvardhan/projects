@@ -1,0 +1,13 @@
+package com.date.operations;
+
+import java.util.List;
+
+public interface LogicalInterface {
+	public abstract void m1();
+
+	public abstract void m2();
+
+	public static void main(String[] args) {
+     List.of("go","ruby",".net","python","java");
+	}
+}

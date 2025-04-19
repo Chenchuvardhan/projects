@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Spring-Security-02-Register-Login-Encrypt-Decrypt
+  datasource:
+    url: jdbc:mysql:///security
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      formatsql: true
+  security:
+    user:
+      name: chenchu
+      password: chenchu
+  main:
+    allow-circular-references: true

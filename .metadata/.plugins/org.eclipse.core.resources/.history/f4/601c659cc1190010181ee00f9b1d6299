@@ -1,0 +1,5 @@
+package com.date.operations;
+
+public class AgeException extends Exception{
+
+}

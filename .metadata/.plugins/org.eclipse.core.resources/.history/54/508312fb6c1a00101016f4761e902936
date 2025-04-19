@@ -1,0 +1,19 @@
+package com.jagannadh;
+
+public class SingleConcatedString {
+	static String concatAllStrings(String... names) {
+	    String concat="";
+		if(names.length==0)
+		return "No Element Passed";
+		else {
+		for(String s:names) {
+			concat+=s;
+		}
+		return concat;
+		}
+	    		
+	}
+	public static void main(String[] args) {
+    System.out.println(concatAllStrings());
+	}
+}

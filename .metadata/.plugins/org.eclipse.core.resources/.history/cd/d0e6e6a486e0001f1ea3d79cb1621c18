@@ -1,0 +1,12 @@
+package in.compass.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class JioController {
+	@GetMapping(value="/help")
+	public String anyHelp() {
+    return "Jio HelpLine :/n";
+	}
+}

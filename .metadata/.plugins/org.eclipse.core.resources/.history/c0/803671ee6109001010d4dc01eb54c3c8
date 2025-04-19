@@ -1,0 +1,13 @@
+package com.multithreading;
+
+public class FunctionalRunnable {
+public static void main(String[] args)throws InterruptedException {
+	Runnable r=()->{for(int i=1;i<=5;i++) {System.out.println("Run method called");}};
+	Thread thread = new Thread(r);
+	thread.start();
+	Runnable r1=()->{for(int i=1;i<=5;i++) {System.out.println("Start method called");}};
+	Thread th=new Thread(r1);
+	th.start();
+	thread.join();
+}
+}

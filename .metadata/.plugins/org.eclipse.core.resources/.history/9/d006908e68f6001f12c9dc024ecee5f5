@@ -1,0 +1,15 @@
+package com.mphasis;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class CharacterOccuranceinString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     String lang="malayalam";
+     Map<Character,Integer> map=new LinkedHashMap<>();
+     lang.codePoints().forEach(c->System.out.println(c));
+	}
+
+}

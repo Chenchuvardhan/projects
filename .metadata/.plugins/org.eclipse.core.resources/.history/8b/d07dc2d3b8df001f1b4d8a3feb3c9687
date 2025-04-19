@@ -1,0 +1,5 @@
+package in.compass.controller;
+
+public class ContactController {
+
+}

@@ -1,0 +1,27 @@
+package com.jagannadh;
+
+public class ContainsMethod {
+	static void containsNumber(int target, int... values) {
+		boolean have = false;
+		if (values.length != 0) {
+			for (int i : values) {
+				if (target == i) {
+					have = true;
+					System.out.println(target + " contains in the numbers");
+					break;
+				}
+			}
+			if (have)
+				System.out.println(target + " not contains in the numbers");
+
+		}
+		else {
+			System.out.println("You need to pass values");
+		}
+
+	}
+
+	public static void main(String[] args) {
+		containsNumber(19, 1, 2, 3, 4, 56, 7, 29, 17);
+	}
+}

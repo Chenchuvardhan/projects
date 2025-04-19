@@ -1,0 +1,12 @@
+package com.date.operations;
+
+public class PrintPersonHobbies {
+	void printHobbies(String name,String... hobbies) {
+		System.out.println(name+" hobbies are :");
+		for(String hobbie:hobbies)
+			System.out.println(hobbie);
+	}
+	public static void main(String[] args) {
+    printHobbies("Avinash","go to Institue","watch Movies","Eat biriyanis","Bath Every Day 1 hour","watch Insta reels");
+	}
+}

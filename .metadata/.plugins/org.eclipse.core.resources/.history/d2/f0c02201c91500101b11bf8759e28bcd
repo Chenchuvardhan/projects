@@ -1,0 +1,19 @@
+package com.date.
+operations;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class DateOperations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+        LocalDate.parse("12-03-2023");
+		}
+		catch(Exception e) {
+	     System.out.println(LocalDate.parse("12-03-2023",DateTimeFormatter.ofPattern("dd-MM-yyyy")).getMonth());
+		}
+	}
+
+}

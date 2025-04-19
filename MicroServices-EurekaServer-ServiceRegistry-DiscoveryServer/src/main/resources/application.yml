@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: MicroServices-EurekaServer-ServiceRegistry-DiscoveryServer
+server:
+  port : 8761
+eureka:
+  client:
+    register-with-eureka: false

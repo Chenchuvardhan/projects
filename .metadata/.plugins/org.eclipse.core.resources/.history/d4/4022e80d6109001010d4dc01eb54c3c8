@@ -1,0 +1,10 @@
+package com.multithreading;
+
+public class FunctionalRunnable {
+public static void main(String[] args) {
+	Runnable r=()->System.out.println("Run method called");
+	Thread thread = new Thread(r);
+	thread.start();
+	
+}
+}

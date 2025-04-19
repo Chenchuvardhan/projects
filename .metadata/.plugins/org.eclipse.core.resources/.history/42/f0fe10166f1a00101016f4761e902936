@@ -1,0 +1,13 @@
+package com.jagannadh;
+
+public class ContainsMethod {
+	static void containsNumber(int target, int... values) {
+    if(values.length!=0)
+		System.out.println(target +" Not Contains");
+		
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

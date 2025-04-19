@@ -1,0 +1,5 @@
+package com.jse;
+@FunctionalInterface
+public interface FunctionInterface  {
+public abstract  void m1();
+}

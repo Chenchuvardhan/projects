@@ -1,0 +1,10 @@
+package com.mphasis;
+
+public class RemoveDupsInString {
+	public static void main(String[] args) {
+    String word="java";
+    StringBuilder uniqWord=new StringBuilder();
+    word.chars().distinct().forEach(c->uniqWord.append((char)c));
+    System.out.println(uniqWord);
+	}
+}

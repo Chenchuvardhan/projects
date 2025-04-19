@@ -1,0 +1,32 @@
+package com.mphasis;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.stream.Collectors;
+
+public class TestClassForJavaQuestions {
+	public static void main(String[] args) {
+		// Initialize the HashMap
+		HashMap<String, Integer> map = new HashMap<>();
+		map.put("Java", 35);
+		map.put("JPA", 45);
+		map.put("Angular", 20);
+		map.put("React", 41);
+		map.put("DotNet", 42);
+
+		// Sorting the map by values in descending order and getting the top 3 keys
+		List<String> topThree = map.entrySet().stream().sorted((a, b) -> b.getValue().compareTo(a.getValue())) //
+				.limit(3) // Get top 3 entries
+				.map(Map.Entry::getKey) // Extract keys
+				.toList(); // Convert to List
+
+		// Print the result
+		System.out.println("Top 3 words: " + String.join(", ", topThree));
+		List<Entry<String,Integer>> collect = map.entrySet().stream().sorted((Map.Entry.<String,Integer>comparingByValue().reversed()).limit(1).collect(Collectors.toList());
+		System.out.println(collect);
+		
+	}
+
+}

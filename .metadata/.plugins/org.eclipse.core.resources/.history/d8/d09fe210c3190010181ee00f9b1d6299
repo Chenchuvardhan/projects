@@ -1,0 +1,11 @@
+package com.jse;
+
+import java.io.Serializable;
+import java.util.RandomAccess;
+import java.util.concurrent.Callable;
+
+
+@FunctionalInterface
+public interface FunctionInterface extends RandomAccess,Serializable,Cloneable {
+public abstract  void m1();
+}

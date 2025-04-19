@@ -1,0 +1,9 @@
+package com.jagannadh;
+
+public class MaxElemnet {
+	public static int findMax(int ...numbers) {
+	}
+	public static void main(String[] args) {
+
+	}
+}

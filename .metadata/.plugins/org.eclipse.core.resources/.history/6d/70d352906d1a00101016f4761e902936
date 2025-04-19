@@ -1,0 +1,10 @@
+package com.date.operations;
+
+public class PrintPersonHobbies {
+	void printHobbiels(String name,String... hobbies) {
+		System.out.println(name+" hobbies are :");
+	}
+	public static void main(String[] args) {
+
+	}
+}

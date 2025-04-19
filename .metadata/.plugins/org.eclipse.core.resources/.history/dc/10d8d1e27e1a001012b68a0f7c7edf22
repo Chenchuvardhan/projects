@@ -1,0 +1,13 @@
+package com.jse;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class GroupPloinDromes {
+	public static void main(String[] args) {
+    List<String> of = List.of( "madam", "racecar", "level", "radar", "noon", 
+    		"civic", "refer", "deified", "rotor", "wow","hello", "world", "apple", "banana", "chair",
+    		"orange", "house", "school", "laptop", "phone");
+    of.stream().collect(Collectors.partitioningBy(word->word.equals(new StringBuilder(word).reverse().toString())));
+	}
+}

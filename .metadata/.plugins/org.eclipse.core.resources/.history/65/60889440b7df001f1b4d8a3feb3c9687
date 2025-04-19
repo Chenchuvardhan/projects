@@ -1,0 +1,13 @@
+package in.compass;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MicroServicesCallApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroServicesCallApiApplication.class, args);
+	}
+
+}

@@ -1,0 +1,51 @@
+package com.jse;
+
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+
+class Person {
+    String name;
+    int age;
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Override equals()
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+        Person person = (Person) o;
+        return age == person.age && name.equalsIgnoreCase(person.name);
+    }
+
+    // Override hashCode()
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+
+    @Override
+    public String toString() {
+        return name + " (" + age + ")";
+    }
+}
+
+public class SetExample {
+    public static void main(String[] args) {
+        Set<Person> people = new HashSet<>();
+
+        people.add(new Person("Alice", 30));
+        people.add(new Person("Bob", 25));
+        people.add(new Person("Alice", 30));// Duplicate based on name and age
+        people.add(new Person("alice", 30));
+        System.out.println("Set contains:");
+        for (Person p : people) {
+            System.out.println(p);
+        }
+    }
+}
+

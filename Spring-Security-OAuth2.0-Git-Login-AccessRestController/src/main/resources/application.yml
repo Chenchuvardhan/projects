@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Spring-Security-OAuth2.0-Git-Login-AccessRestController
+  security:
+    oauth2:
+     client:
+       registration:
+         github:
+           client-id: Ov23lieExuzEXdS8XOHB
+           client-secret: 41a43146719873460e4543b8bad0ba4e3bd67fc7 

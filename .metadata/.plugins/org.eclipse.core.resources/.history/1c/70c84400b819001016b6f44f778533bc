@@ -1,0 +1,126 @@
+package com.mphasis;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class EmployeeFilterTest {
+	public static void main(String[] args) {
+		Employee emp1 = new Employee(10, "Raveendra", 38000.00, "male", "sudheer@gmail.com", "india");
+		Employee emp2 = new Employee(11, "Ganesh", 23000.00, "male", "Ganesh@gmail.com", "Srilanka");
+		Employee emp3 = new Employee(12, "Pawan", 56000.00, "male", "Pawan@gmail.com", "india");
+		Employee emp4 = new Employee(13, "Ankit", 66000.00, "male", "Ankit@gmail.com", "Bangaldesh");
+		Employee emp5 = new Employee(14, "Muniraja", 47000.00, "male", "Muniraja@gmail.com", "UK");
+		Employee emp6 = new Employee(15, "Jagadeesh", 14000.00, "male", "Jagadeesh@gmail.com", "india");
+		Employee emp7 = new Employee(16, "Sumanth", 32000.00, "male", "Sumanth@gmail.com", "Bangaldesh");
+		Employee emp8 = new Employee(17, "Arjun", 24000.00, "male", "Arjun@gmail.com", "india");
+		Employee emp9 = new Employee(18, "Mahesh", 48000.00, "male", "Mahesh@gmail.com", "Srilanka");
+		Employee emp10 = new Employee(19, "Faizal", 72000.00, "male", "Faizal@gmail.com", "Bangaldesh");
+		Employee emp11 = new Employee(20, "Anvesh", 96000.00, "male", "Anvesh@gmail.com", "india");
+		Employee emp12 = new Employee(21, "Manjeet", 91000.00, "male", "Manjeet@gmail.com", "india");
+		// Female Employees
+		Employee emp13 = new Employee(1, "Suneeta", 42000.00, "Female", "Suneeta@gmail.com", "Iraq");
+		Employee emp14 = new Employee(2, "Mounika", 45000.00, "Female", "Mounika@gmail.com", "Poland");
+		Employee emp15 = new Employee(3, "Ramya", 38000.00, "Female", "Ramya@gmail.com", "Iraq");
+		Employee emp16 = new Employee(4, "Gayatri", 38000.00, "Female", "Gayatri@gmail.com", "Nepal");
+		Employee emp17 = new Employee(5, "Siri", 38000.00, "Female", "Siri@gmail.com", "Iraq");
+		Employee emp18 = new Employee(6, "Rajitha", 38000.00, "Female", "Rajitha@gmail.com", "Poland");
+		Employee emp19 = new Employee(7, "Chandana", 38000.00, "Female", "Chandana@gmail.com", "Iraq");
+		Employee emp20 = new Employee(8, "Laxmi", 38000.00, "Female", "Laxmi@gmail.com", "Poland");
+		Employee emp21 = new Employee(9, "Mamatha", 38000.00, "Female", "Mamatha@gmail.com", "Iraq");
+		Employee emp22 = new Employee(10, "Manisha", 38000.00, "Female", "Manisha@gmail.com", "Poland");
+		Employee emp23 = new Employee(11, "Soniya", 38000.00, "Female", "Soniya@gmail.com", "Nepal");
+		Employee emp24 = new Employee(12, "Bhumika", 38000.00, "Female", "Bhumika@gmail.com", "Nepal");
+		List<Employee> asList = Arrays.asList(emp1, emp2, emp3, emp4, emp5, emp6, emp7, emp8, emp9, emp10, emp11, emp12,
+				emp13, emp14, emp15, emp16, emp17, emp18, emp19, emp20, emp21, emp22, emp23, emp24);
+		List<Employee> of = List.of(emp1, emp2, emp3, emp4, emp5, emp6, emp7, emp8, emp9, emp10, emp11, emp12, emp13,
+				emp14, emp15, emp16, emp17, emp18, emp19, emp20, emp21, emp22, emp23, emp24,new Employee(3, "Neelu", 38000.00, "Female", "Neelu@gmail.com", "Nepal"));
+		// List<Employee> collect =
+		// asList.stream().filter(emp->emp.getSalary()>50000).filter(emp->emp.getGender().equalsIgnoreCase("male")).filter(emp->emp.getCountry().equalsIgnoreCase("Bangaldesh")).collect(Collectors.toList());
+		// System.out.println(collect);
+		/*
+		 * Map<String, List<Employee>> collect2 =
+		 * asList.stream().collect(Collectors.groupingBy(Employee::getGender));
+		 * collect2.forEach((gender,emps)->{ System.out.print(gender+"-");
+		 * System.out.println(emps); });
+		 */
+		/*
+		 * long count = of.stream().count(); System.out.println(count); Employee
+		 * employee =
+		 * of.stream().max(Comparator.comparingDouble(Employee::getSalary)).get();
+		 * System.out.println(employee);
+		 */
+		/*
+		 * Employee employee =
+		 * of.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()
+		 * ).skip(1).findFirst().get(); System.out.println(employee); Employee employee2
+		 * = of.stream().min(Comparator.comparingDouble(Employee::getSalary)).get();
+		 * System.out.println(employee2);
+		 */
+		double sum = of.stream().mapToDouble(Employee::getSalary).average().getAsDouble();
+		System.out.println(sum);
+		String str = "java";
+		Stream<Employee> of2 = Stream.of(emp1, emp2, emp3, emp4, emp5, emp6, emp7, emp8, emp9, emp10, emp11, emp12,
+				emp13, emp14, emp15, emp16, emp17, emp18, emp19, emp20, emp21, emp22, emp23, emp24);
+		/*
+		 * Stream<Employee> skip =
+		 * of2.sorted(Comparator.comparing(Employee::getSalary)).skip(1); Employee
+		 * orElseGet = skip.findFirst().orElseGet(null);
+		 */
+		// Employee employee =
+		// of2.min(Comparator.comparing(Employee::getSalary)).orElseGet(null);
+		// System.out.println(employee);
+		// of2.sorted((a,b)->b.getSalary().compareTo(a.getSalary())).forEach(System.out::print);
+		// of2.sorted().forEach(System.out::print);
+		/*
+		 * Employee orElseGet =
+		 * of2.filter(e->e.getGender().equalsIgnoreCase("female")).sorted(Comparator.
+		 * comparing(Employee::getSalary).reversed()).findFirst().orElseGet(null);
+		 * System.out.println(orElseGet);
+		 */
+		// DoubleStream mapToDouble = of2.mapToDouble(Employee::getSalary);
+		// mapToDouble.sum();
+		// mapToDouble.average();
+		// Map<String,List<Employee>> collect =
+		// of2.collect(Collectors.groupingBy(Employee::getGender));
+		// collect.forEach((a,b)->System.out.println(a+" total salary
+		// :"+b.stream().mapToDouble(Employee::getSalary).sum()));
+		// List<Employee> collect =
+		// of2.filter(e->e.getSalary()>50000&&e.getCountry().equalsIgnoreCase("India")&&e.getGender().equalsIgnoreCase("male")).collect(Collectors.toList());
+		// System.out.println(collect);
+		// of2.sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).limit(1).forEach(System.out::println);
+		// LinkedHashMap<String,Long> collect =
+		// of2.collect(Collectors.groupingBy(Employee::getCountry,LinkedHashMap::new,Collectors.counting()));
+		// System.out.println(collect);
+		// DoubleSummaryStatistics summaryStatistics =
+		// of2.mapToDouble(Employee::getSalary).summaryStatistics();
+		// System.out.println(summaryStatistics.getAverage()+"-"+summaryStatistics.getMax()+"-"+summaryStatistics.getMin()+"-"+summaryStatistics.getCount()+"-"+summaryStatistics.getSum());
+		//System.out.println(of2.sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).limit(1).findAny().get());
+		/*of2.filter(i -> i.getSalary() < 50000).map(i -> {
+			i.setSalary(i.getSalary() + i.getSalary() * 10 / 100);
+			return i;
+		}).forEach(System.out::println);
+	*/
+		/*
+		 * Map<String,Integer> count=new LinkedHashMap<>();
+		 * of2.collect(Collectors.groupingBy(Employee::getGender)).forEach((i,j)->count.
+		 * put(i, j.size())); System.out.println(count);
+		 */
+		//Map<String,Long> collect = of2.collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));
+		//System.out.println(collect);
+		//of2.filter(i->i.getSalary()>50000&&i.getGender().equalsIgnoreCase("female")).forEach(System.out::print);
+		//String collect = of2.collect(Collectors.groupingBy(Employee::getGender)).entrySet().stream().map(i->i.getKey()+"-total salary="+i.getValue().stream().mapToDouble(Employee::getSalary).sum()+"|").collect(Collectors.joining());
+		//System.out.println(collect);.
+       // Employee orElseThrow = of2.sorted(Comparator.comparing(Employee::getSalary).thenComparing(Employee::getId).reversed()).findFirst().orElseThrow(()->new RuntimeException("Employee Not Found"));
+        //System.out.println(orElseThrow);
+		Set<Employee> of3 = Set.of(emp1, emp2, emp3, emp4, emp5, emp6, emp7, emp8, emp9, emp10, emp11, emp12);
+		System.out.println(of3);
+	      System.out.println(of3.stream().collect(Collectors.averagingDouble(e->e.getSalary())));
+		Map<Boolean,List<Employee>> collect = of.stream().collect(Collectors.partitioningBy(e->e.getGender().equalsIgnoreCase("male")));
+        System.out.println(collect.get(false).stream().max(e->e.getSalary()>));
+	}
+		
+}

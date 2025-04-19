@@ -1,0 +1,16 @@
+package com.date.operations;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class DateOperations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      DateTimeFormatter ofPattern = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+      String date ="15-08-1947";
+      LocalDate localDate = LocalDate.parse(date,ofPattern);
+      System.out.println(localDate.getDayOfWeek());
+      }
+
+}

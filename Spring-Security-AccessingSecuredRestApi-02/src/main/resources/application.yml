@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Spring-Security-AccessingSecuredRestApi-02
+  security:
+    user:
+      name: chenchu
+      password: chenchu
+  datasource:
+    url: jdbc:mysql:///security
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+        formatsql: true
+server:
+  port: 9090
+
+ 

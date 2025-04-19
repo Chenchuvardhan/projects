@@ -1,0 +1,11 @@
+package com.jagannadh;
+
+public class Sum {
+ public static double sumOfDoubles(double... values) {
+	 if(values.length!=0)
+		 double i = 0;
+	 for(double a:values) {
+		 
+	 }
+ }
+}

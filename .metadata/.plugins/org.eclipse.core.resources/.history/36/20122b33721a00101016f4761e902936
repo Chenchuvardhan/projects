@@ -1,0 +1,17 @@
+package com.jagannadh;
+
+public class Sum {
+	public static double sumOfDoubles(double... values) {
+		double a = 0.0;
+	 if(values.length!=0) 
+	 for(double value:values) 
+	  a+=value;
+	 else 
+		 System.out.print("Operation Fail Due to you did not pass Values \n Your Score");
+	return a;
+	}
+
+	public static void main(String[] args) {
+   System.out.println(sumOfDoubles());
+	}
+}

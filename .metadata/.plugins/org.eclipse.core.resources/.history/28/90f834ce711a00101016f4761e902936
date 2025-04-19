@@ -1,0 +1,17 @@
+package com.jagannadh;
+
+public class Sum {
+	public static double sumOfDoubles(double... values) {
+		double a = 0.0;
+	 if(values.length!=0) 
+	 for(double value:values) 
+	  a+=value;
+	 else {
+		 System.out.println("Operation Fail");
+	 }
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

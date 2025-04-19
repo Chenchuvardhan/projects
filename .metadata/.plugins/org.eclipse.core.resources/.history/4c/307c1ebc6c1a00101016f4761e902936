@@ -1,0 +1,19 @@
+package com.jagannadh;
+
+public class SingleConcatedString {
+	static String concatAllStrings(String... names) {
+	    String concat="";
+		if(names.length==0)
+		return null;
+		else {
+		for(String s:names) {
+			concat+=s;
+		}
+		return co;
+		}
+	    		
+	}
+	public static void main(String[] args) {
+    System.out.println(concatAllStrings("jai Sriram"));
+	}
+}

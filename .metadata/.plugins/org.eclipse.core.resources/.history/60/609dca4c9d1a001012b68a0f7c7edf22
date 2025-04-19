@@ -1,0 +1,17 @@
+package com.jse;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class GroupAnagrams {
+	public static void main(String[] args) {
+     List<String> list = List.of( "listen", "silent","rat","tar", "god", "dog", "hello","world","java","evil", "vile" );
+     Map<String,List<String>> collect = list.stream().collect(Collectors.groupingBy(word->word.chars().mapToObj(a->(char)a+"").sorted().collect(Collectors.joining())));
+     System.out.println(collect.values());
+     Collection<List<String>> values = collect.values();
+      List<List<String>> collect2 = values.stream().filter(a->a.size()>1).collect(Collectors.toList());
+     System.out.println(collect2);
+	}
+}

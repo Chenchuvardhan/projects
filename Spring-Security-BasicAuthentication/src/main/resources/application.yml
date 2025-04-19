@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Spring-Security-BasicAuthentication
+  security:
+    user:
+      name: chenchu
+      password: chenchu

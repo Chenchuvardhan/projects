@@ -1,0 +1,24 @@
+package com.mphasis;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class CharacterOccuranceinString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String lang = "malayalam";
+		Map<Character, Integer> map = new LinkedHashMap<>();
+		lang.codePoints().forEach(i -> {
+			if (map.containsKey((char) i))
+			map.put((char) i, map.get((char) i)+ 1);
+			else
+			map.put((char) i, 1);
+		});
+		System.out.println(map);
+		System.out.println("malayalam".chars().mapToObj(i->(char)i).collect(Collectors.toMap(i->i,i->i.isDigit(i))));
+	}
+ 
+}

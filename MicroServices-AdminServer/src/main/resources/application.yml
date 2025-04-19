@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: MicroServices-AdminServer
+server:
+  port: 4444	

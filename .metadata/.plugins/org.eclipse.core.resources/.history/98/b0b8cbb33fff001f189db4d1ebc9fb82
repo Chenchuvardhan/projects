@@ -1,0 +1,17 @@
+package com.mphasis;
+
+import java.util.IntSummaryStatistics;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class SummaryStats {
+public static void main(String[] args) {
+	Stream<Integer> of = Stream.of(7,8,8,4,2,9,1);
+	IntSummaryStatistics summaryStatistics = of.mapToInt(Integer::valueOf).summaryStatistics();
+	long sum = summaryStatistics.getSum();
+	double average = summaryStatistics.getAverage();
+	long count = summaryStatistics.getCount();
+	int max = summaryStatistics.getMax();
+	int min = summaryStatistics.getMin();
+}
+}

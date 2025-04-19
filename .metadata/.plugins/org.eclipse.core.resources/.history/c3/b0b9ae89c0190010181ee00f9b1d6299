@@ -1,0 +1,10 @@
+package com.jse;
+
+import java.util.RandomAccess;
+
+import com.date.operations.LogicalInterface;
+
+@FunctionalInterface
+public interface FunctionInterface extends RandomAccess {
+public abstract  void m1();
+}
