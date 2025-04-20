@@ -1,0 +1,111 @@
+package com.date.operations;
+
+import java.util.Arrays;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class CountVowelsAndConsonants {
+	public static int findCountTheVowels(String sentence) {
+		int count = 0;
+		char[] charArray = sentence.toCharArray();
+		for (char ch : charArray) {
+			if ("AEIOUaeiou".indexOf(ch) != -1) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	public static int findCountTheConsonants(String sentence) {
+		int count = 0;
+		char[] charArray = sentence.toLowerCase().toCharArray();
+		for (char ch : charArray) {
+			if ((ch >= 'b' && ch <= 'd') || (ch >= 'f' && ch <= 'h') || (ch >= 'j' && ch <= 'n')
+					|| (ch >= 'p' && ch <= 't') || (ch >= 'v' && ch <= 'z')) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	public static void reverseString(String line) {
+		// String string = new StringBuilder(line).reverse().toString();
+		String reverseLine = line.chars().mapToObj(c -> (char) c + "").sorted((a, b) -> -1)
+				.collect(Collectors.joining());
+		System.out.println(reverseLine);
+
+	}
+
+	public static void checkPolindrome(String line) {
+		if (line.equals(new StringBuilder(line).reverse().toString()))
+			System.out.println(line + " is polindrome");
+		else
+			System.out.println(line + " is not polindrome");
+	}
+
+	public static int countTheWordsInSentence(String sentence) {
+		return (int) Arrays.stream(sentence.split("\\s+")).filter(word -> !(word.isBlank())).count();
+	}
+
+	public static void convertToTitleCase(String sentence) {
+		String modify = Arrays.stream(sentence.split(" "))
+				.map(word -> (word.charAt(0) + "").toUpperCase() + word.substring(1)).collect(Collectors.joining(" "));
+		System.out.println(modify);
+	}
+
+	public static void checkAnagram() {
+		String one = "silent";
+		String two = "listen";
+		boolean equals = one.chars().mapToObj(c -> (char) c + "").sorted().collect(Collectors.joining())
+				.equals(two.chars().mapToObj(c -> (char) c + "").sorted().collect(Collectors.joining()));
+		if (equals) {
+			System.out.println(one + " , " + two + " are anagrams");
+		} else {
+			System.out.println(one + " , " + two + " are not anagrams");
+
+		}
+	}
+
+	public static void frequencyOfACharacters() {
+		String word = new Scanner(System.in).nextLine();
+		Map<Character, Long> collect = word.chars().mapToObj(c -> (char) c)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		System.out.println(collect);
+	}
+
+	public static void removeDuplicates() {
+		String word = "amma";
+		String unique = word.chars().mapToObj(c -> (char) c).distinct().map(String::valueOf)
+				.collect(Collectors.joining());
+		System.out.println(unique);
+	}
+
+	public static void findLongestWordInASentence() {
+    String sentence="          hai      i  am     Venakata siva ";
+    String[] split = sentence.split("\\s+");
+    Arrays.stream(split).max((a,b)->b.length()-a.length()).ifPresent(System.out::println);;
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		/*
+		 * System.out.println("Enter your word"); String word=scan.nextLine();
+		 * System.out.println("Consonants count is :"+findCountTheConsonants(word));
+		 * System.out.println("Vowels count is :"+findCountTheVowels(word));
+		 * reverseString(word); checkPolindrome(word);
+		 */
+
+		/*
+		 * System.out.println("Enter your sentence :"); String sentence =
+		 * scan.nextLine(); convertToTitleCase(sentence);
+		 */
+
+		removeDuplicates();
+		findLongestWordInASentence();
+		scan.close();
+
+	}
+}
