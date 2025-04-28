@@ -1,5 +1,0 @@
-package com.jse;
-@FunctionalInterface
-public interface FunctionalInterface {
-public abstract  void m1();
-}

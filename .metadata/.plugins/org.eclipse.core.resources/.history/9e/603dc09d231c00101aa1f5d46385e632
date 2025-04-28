@@ -1,7 +1,0 @@
-package com.jse;
-
-public class QueueOperations {
-	public static void main(String[] args) {
-
-	}
-}

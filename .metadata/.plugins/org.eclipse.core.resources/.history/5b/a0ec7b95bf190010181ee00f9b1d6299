@@ -1,5 +1,0 @@
-package com.jse;
-@FunctionalInterface
-public class FunctionalInterface {
-
-}

@@ -1,5 +1,0 @@
-package com.date.operations;
-
-public interface LogicalInterface {
-
-}

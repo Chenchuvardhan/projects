@@ -1,7 +1,0 @@
-package com.jagannadh;
-
-public class SentenceOperations {
-	public static void main(String[] args) {
-
-	}
-}

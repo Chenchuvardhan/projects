@@ -11902,3 +11902,888 @@ END
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-20 11:25:05.714
 !MESSAGE Started org.springframework.tooling.boot.ls LS process 19404
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-20 13:40:28.880
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-20 13:42:01.728
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2025-04-21 09:36:12.290 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-21 09:36:49.050
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-21 09:36:56.534
+!MESSAGE Logback config file: C:\Spring Security\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-21 09:36:57.129
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-21 09:36:57.131
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-21 09:36:57.594
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-21 09:36:57.595
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-21 09:37:04.734
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring Security/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1745208424734
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 09:37:04.734
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-21 09:37:04.756
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 15324
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 09:37:06.951
+!MESSAGE Boot project ADDED: Autowiring-ByName
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 09:37:06.952
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 09:37:06.954
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 09:37:06.978
+!MESSAGE Boot project ADDED: CrudOperations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 09:37:07.007
+!MESSAGE Boot project ADDED: MicroServices-AadharApi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 09:37:07.045
+!MESSAGE Boot project ADDED: PhoneBook
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-21 09:37:07.069
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DELL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 09:37:07.092
+!MESSAGE Boot project ADDED: Spring-Security-OAuth2.0-Git-Login-AccessRestController
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-21 09:56:39.508
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2025-04-21 18:49:54.546 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-21 18:50:59.879
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-21 18:52:18.457
+!MESSAGE Logback config file: C:\Spring Security\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-21 18:52:19.253
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-21 18:52:19.253
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-21 18:52:19.803
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-21 18:52:19.803
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-21 18:52:27.483
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring Security/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1745241747482
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 18:52:27.483
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-21 18:52:27.504
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 9364
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 18:52:29.718
+!MESSAGE Boot project ADDED: Autowiring-ByName
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 18:52:29.720
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 18:52:29.730
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 18:52:29.764
+!MESSAGE Boot project ADDED: CrudOperations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 18:52:29.788
+!MESSAGE Boot project ADDED: MicroServices-AadharApi
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-21 18:52:29.788
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DELL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 18:52:29.810
+!MESSAGE Boot project ADDED: PhoneBook
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 18:52:29.833
+!MESSAGE Boot project ADDED: Spring-Security-OAuth2.0-Git-Login-AccessRestController
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-21 18:52:35.654
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2025-04-23 10:06:24.165 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-23 10:07:15.539
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-23 10:15:52.695
+!MESSAGE Logback config file: C:\Spring Security\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-23 10:15:53.325
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-23 10:15:53.325
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-23 10:15:53.764
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-23 10:15:53.764
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-23 10:16:01.468
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring Security/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1745383561464
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:16:01.468
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-23 10:16:01.490
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 13740
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:16:03.787
+!MESSAGE Boot project ADDED: Autowiring-ByName
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:16:03.810
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-23 10:16:03.810
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DELL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:16:03.814
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:16:03.837
+!MESSAGE Boot project ADDED: CrudOperations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:16:03.874
+!MESSAGE Boot project ADDED: MicroServices-AadharApi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:16:03.905
+!MESSAGE Boot project ADDED: PhoneBook
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:16:03.953
+!MESSAGE Boot project ADDED: Spring-Security-OAuth2.0-Git-Login-AccessRestController
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-23 10:17:22.750
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:19:24.393
+!MESSAGE Classpath changed for project: 05-Auth-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:19:24.396
+!MESSAGE Boot project ADDED: 05-Auth-Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-23 10:19:50.833
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface 2 0 2025-04-23 10:20:47.173
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-04-23 10:20:47.173
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:21:04.930
+!MESSAGE Classpath changed for project: Accessing-SecuredRestControllerThroughSpringBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 10:21:04.932
+!MESSAGE Boot project ADDED: Accessing-SecuredRestControllerThroughSpringBoot
+!SESSION 2025-04-23 18:17:04.265 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-23 18:17:50.992
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-23 18:17:58.821
+!MESSAGE Logback config file: C:\Spring Security\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-23 18:17:59.407
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-23 18:17:59.407
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-23 18:17:59.899
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-23 18:17:59.899
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-23 18:18:08.954
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DELL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.494
+!MESSAGE Boot project ADDED: 05-Auth-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.497
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.548
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.568
+!MESSAGE Boot project ADDED: Accessing-SecuredRestControllerThroughSpringBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.569
+!MESSAGE Boot project ADDED: Autowiring-ByName
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.571
+!MESSAGE Boot project ADDED: CrudOperations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.573
+!MESSAGE Boot project ADDED: MicroServices-AadharApi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.574
+!MESSAGE Boot project ADDED: PhoneBook
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.578
+!MESSAGE Boot project ADDED: Spring-Security-OAuth2.0-Git-Login-AccessRestController
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-23 18:18:09.612
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring Security/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1745412489611
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-23 18:18:09.613
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-23 18:18:09.625
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 6596
+
+!ENTRY org.eclipse.jface 2 0 2025-04-23 18:18:13.392
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-04-23 18:18:13.392
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2025-04-24 18:05:29.358 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-24 18:06:17.810
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-04-24 18:06:22.989
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-24 18:06:24.218
+!MESSAGE Logback config file: C:\Spring Security\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-24 18:06:24.987
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-24 18:06:24.987
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-24 18:06:25.430
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-24 18:06:25.430
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-24 18:06:33.332
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring Security/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1745498193332
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:33.333
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-24 18:06:33.352
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 15164
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:35.003
+!MESSAGE Boot project ADDED: 05-Auth-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:35.005
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:35.007
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:35.009
+!MESSAGE Boot project ADDED: Accessing-SecuredRestControllerThroughSpringBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:35.009
+!MESSAGE Boot project ADDED: Autowiring-ByName
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:35.011
+!MESSAGE Boot project ADDED: CrudOperations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:35.014
+!MESSAGE Boot project ADDED: MicroServices-AadharApi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:35.014
+!MESSAGE Boot project ADDED: PhoneBook
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-24 18:06:35.016
+!MESSAGE Boot project ADDED: Spring-Security-OAuth2.0-Git-Login-AccessRestController
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-24 18:06:35.156
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DELL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-24 18:11:28.827
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2025-04-26 19:31:07.005 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-26 19:32:17.403
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-26 19:32:25.643
+!MESSAGE Logback config file: C:\Spring Security\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-26 19:32:26.239
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-26 19:32:26.239
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-26 19:32:26.819
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-26 19:32:26.819
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-26 19:32:36.372
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DELL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.136
+!MESSAGE Boot project ADDED: 05-Auth-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.137
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.244
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.248
+!MESSAGE Boot project ADDED: Accessing-SecuredRestControllerThroughSpringBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.248
+!MESSAGE Boot project ADDED: Autowiring-ByName
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.250
+!MESSAGE Boot project ADDED: CrudOperations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.256
+!MESSAGE Boot project ADDED: MicroServices-AadharApi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.261
+!MESSAGE Boot project ADDED: PhoneBook
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.262
+!MESSAGE Boot project ADDED: Spring-Security-OAuth2.0-Git-Login-AccessRestController
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-26 19:32:37.312
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring Security/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1745676157312
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-26 19:32:37.312
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-26 19:32:37.359
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 16672
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-26 19:44:43.713
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2025-04-27 14:07:59.932 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-27 14:08:04.999
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-27 14:08:19.605
+!MESSAGE Logback config file: C:\Spring Security\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-27 14:08:20.255
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-27 14:08:20.255
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-27 14:08:20.731
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-27 14:08:20.731
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-27 14:08:27.833
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring Security/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1745743107830
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:27.833
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-27 14:08:27.855
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 17924
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:29.937
+!MESSAGE Boot project ADDED: 05-Auth-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:29.939
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:29.941
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:29.948
+!MESSAGE Boot project ADDED: Accessing-SecuredRestControllerThroughSpringBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:29.952
+!MESSAGE Boot project ADDED: Autowiring-ByName
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:29.958
+!MESSAGE Boot project ADDED: CrudOperations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:29.968
+!MESSAGE Boot project ADDED: MicroServices-AadharApi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:29.982
+!MESSAGE Boot project ADDED: PhoneBook
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 14:08:29.993
+!MESSAGE Boot project ADDED: Spring-Security-OAuth2.0-Git-Login-AccessRestController
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-27 14:08:30.710
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DELL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-27 14:11:23.451
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.ui 4 0 2025-04-27 14:13:40.209
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Illegal group reference: group index is missing
+	at java.base/java.util.regex.Matcher.appendExpandedReplacement(Matcher.java:1075)
+	at java.base/java.util.regex.Matcher.appendReplacement(Matcher.java:1043)
+	at java.base/java.util.regex.Matcher.replaceFirst(Matcher.java:1446)
+	at org.eclipse.jface.text.FindReplaceDocumentAdapter.findReplace(FindReplaceDocumentAdapter.java:201)
+	at org.eclipse.jface.text.FindReplaceDocumentAdapter.replace(FindReplaceDocumentAdapter.java:607)
+	at org.eclipse.jface.text.TextViewer$FindReplaceTarget.replaceSelection(TextViewer.java:807)
+	at org.eclipse.ui.texteditor.FindReplaceTarget.replaceSelection(FindReplaceTarget.java:128)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.replaceSelection(FindReplaceLogic.java:501)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.lambda$2(FindReplaceLogic.java:385)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.executeWithReplaceAllEnabled(FindReplaceLogic.java:410)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.lambda$1(FindReplaceLogic.java:382)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.executeInForwardMode(FindReplaceLogic.java:395)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.replaceAll(FindReplaceLogic.java:381)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.performReplaceAll(FindReplaceLogic.java:225)
+	at org.eclipse.ui.texteditor.FindReplaceDialog$5.lambda$0(FindReplaceDialog.java:358)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.texteditor.FindReplaceDialog$5.widgetSelected(FindReplaceDialog.java:357)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:265)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4083)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.ui 4 0 2025-04-27 14:13:42.157
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Illegal group reference: group index is missing
+	at java.base/java.util.regex.Matcher.appendExpandedReplacement(Matcher.java:1075)
+	at java.base/java.util.regex.Matcher.appendReplacement(Matcher.java:1043)
+	at java.base/java.util.regex.Matcher.replaceFirst(Matcher.java:1446)
+	at org.eclipse.jface.text.FindReplaceDocumentAdapter.findReplace(FindReplaceDocumentAdapter.java:201)
+	at org.eclipse.jface.text.FindReplaceDocumentAdapter.replace(FindReplaceDocumentAdapter.java:607)
+	at org.eclipse.jface.text.TextViewer$FindReplaceTarget.replaceSelection(TextViewer.java:807)
+	at org.eclipse.ui.texteditor.FindReplaceTarget.replaceSelection(FindReplaceTarget.java:128)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.replaceSelection(FindReplaceLogic.java:501)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.lambda$2(FindReplaceLogic.java:385)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.executeWithReplaceAllEnabled(FindReplaceLogic.java:410)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.lambda$1(FindReplaceLogic.java:382)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.executeInForwardMode(FindReplaceLogic.java:395)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.replaceAll(FindReplaceLogic.java:381)
+	at org.eclipse.ui.internal.findandreplace.FindReplaceLogic.performReplaceAll(FindReplaceLogic.java:225)
+	at org.eclipse.ui.texteditor.FindReplaceDialog$5.lambda$0(FindReplaceDialog.java:358)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.texteditor.FindReplaceDialog$5.widgetSelected(FindReplaceDialog.java:357)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:265)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4083)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SESSION 2025-04-27 21:10:13.081 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-27 21:10:59.990
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-27 21:11:09.047
+!MESSAGE Logback config file: C:\Spring Security\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-27 21:11:09.771
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-27 21:11:09.771
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-27 21:11:10.375
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-27 21:11:10.375
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-27 21:11:18.155
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\DELL\eclipse\java-2024-03\eclipse\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring Security/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1745768478155
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:18.156
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-27 21:11:18.184
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10584
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:19.362
+!MESSAGE Boot project ADDED: 05-Auth-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:19.364
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:19.369
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:19.369
+!MESSAGE Boot project ADDED: Accessing-SecuredRestControllerThroughSpringBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:19.370
+!MESSAGE Boot project ADDED: Autowiring-ByName
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:19.372
+!MESSAGE Boot project ADDED: CrudOperations
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:19.373
+!MESSAGE Boot project ADDED: MicroServices-AadharApi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:19.374
+!MESSAGE Boot project ADDED: PhoneBook
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-27 21:11:19.497
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DELL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-27 21:11:20.249
+!MESSAGE Boot project ADDED: Spring-Security-OAuth2.0-Git-Login-AccessRestController
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-27 21:11:26.932
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

@@ -1,7 +1,0 @@
-package com.date.operations;
-
-public class PrintPersonHobbies {
-	public static void main(String[] args) {
-
-	}
-}

@@ -1,9 +1,0 @@
-package com.jse;
-
-import java.util.RandomAccess;
-
-
-@FunctionalInterface
-public interface FunctionInterface extends RandomAccess {
-public abstract  void m1();
-}

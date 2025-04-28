@@ -1,7 +1,0 @@
-package com.jse;
-
-public class GroupPloinDromes {
-	public static void main(String[] args) {
-
-	}
-}
