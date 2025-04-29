@@ -1,4 +1,8 @@
 package com.jagannadh;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 /*
 Que 1 : Simple Vehicle Inheritance in Java
 ===========================================
@@ -103,7 +107,7 @@ sample output :
 class Vechile {
 	String make;
 	String model;
-	int year;
+	Integer year;
 
 	Vechile() {
 	}
@@ -111,7 +115,11 @@ class Vechile {
 	Vechile(String make, String model, int year) {
 		this.make = make;
 		this.model = model;
+		if(year>0)
 		this.year = year;
+		else {
+			
+		}
 	}
 
 	void displayDetails() {
@@ -132,12 +140,11 @@ class Bike extends Vechile {
 	String type;
 
 	Bike(String make, String model, int year, String type) {
-		if(year>0)
          super(make,model,year);
-		else {
-			System.err.println("Error: Invalid Input);
-		}
-	}
+
+			
+			System.err.println("Error: Invalid Input");
+			}
 }
 
 class InvalidInputException extends RuntimeException {
@@ -148,6 +155,9 @@ class InvalidInputException extends RuntimeException {
 
 public class VechileTest {
 	public static void main(String[] args) {
-
+       Queue<Integer> q=new PriorityQueue<>();
+       //q.offer(null);
+       Integer poll = q.remove();
+       System.out.println(poll);
 	}
 }
