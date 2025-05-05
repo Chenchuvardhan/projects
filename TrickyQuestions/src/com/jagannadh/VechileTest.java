@@ -152,12 +152,18 @@ class InvalidInputException extends RuntimeException {
 		super(msg);
 	}
 }
-
+@FunctionalInterface
+interface Vehicle {
+	public abstract void start();
+}
 public class VechileTest {
 	public static void main(String[] args) {
        Queue<Integer> q=new PriorityQueue<>();
        //q.offer(null);
-       Integer poll = q.remove();
-       System.out.println(poll);
+       //Integer poll = q.remove();
+       //System.out.println(poll);
+       Vehicle v1=()->
+    	   System.out.println("Car started");
+    	   v1.start();
 	}
 }
