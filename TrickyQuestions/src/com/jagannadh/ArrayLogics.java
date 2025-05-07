@@ -11,6 +11,7 @@ import java.util.Arrays;
  */
 public class ArrayLogics {
 	public static void findLargestAndSmallest(int[] values) {
+		int o=0;
 		System.out.println("Given Array :" + Arrays.toString(values));
 		for (int i = 0; i < values.length; i++) {
 			for (int j = i + 1; j < values.length; j++) {
